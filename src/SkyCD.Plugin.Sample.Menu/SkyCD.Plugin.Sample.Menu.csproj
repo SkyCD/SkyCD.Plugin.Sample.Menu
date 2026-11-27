@@ -24,7 +24,6 @@
         <AssemblyMetadata Include="AuthorUrl" Value="https://sourceforge.net/projects/skycd/"/>
     </ItemGroup>
     <ItemGroup>
-        <None Update="LICENSE;README.md" Pack="true" PackagePath=""/>
+        <None Include="../../LICENSE;../../README.md" Pack="true" PackagePath=""/>
     </ItemGroup>
 </Project>
-
