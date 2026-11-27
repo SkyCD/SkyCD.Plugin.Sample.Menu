@@ -31,3 +31,13 @@ After a version bump merges, tag the commit with the package version prefixed by
 
 To mirror an existing tagged version, run **Plugin NuGet** with that version. To regenerate metadata for all published releases, run **Publish marketplace feed**.
 [Marketplace manifest](https://skycd.github.io/SkyCD.Plugin.Sample.Menu/plugins.json) · [NuGet service index](https://skycd.github.io/SkyCD.Plugin.Sample.Menu/index.json)
+
+## Run tests locally
+
+With the SkyCD GitHub Packages source configured, run from this repository:
+
+``sh
+dotnet test tests/SkyCD.Plugin.Sample.Menu.Tests/SkyCD.Plugin.Sample.Menu.Tests.csproj -c Release
+``
+
+The tests use SkyCD.Testing and the plugin project.
